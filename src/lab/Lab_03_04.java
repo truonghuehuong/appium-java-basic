@@ -13,21 +13,18 @@ public class Lab_03_04 {
 
         int[] intArray = new int[intArray1.length + intArray2.length];
 //        System.out.println(intArray.length);
-        int i = 0, j=0, k=0;
+        int i = 0, j = 0, k = 0;
 
-        while (i < intArray1.length  && j < intArray2.length){
-            if(intArray1[i] < intArray2[j]){
+        while (i < intArray1.length && j < intArray2.length) {
+            if (intArray1[i] < intArray2[j]) {
                 intArray[k] = intArray1[i];
                 i++;
-            }
-            else{
+            } else {
                 intArray[k] = intArray2[j];
                 j++;
             }
             System.out.println(intArray[k]);
             k++;
         }
-
-
     }
 }
